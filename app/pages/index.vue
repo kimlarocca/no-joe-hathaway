@@ -1,51 +1,35 @@
-<script setup>
-const supabase = useSupabaseClient()
-const loading = ref(true)
-const supabaseData = ref(null)
-
-const getData = async () => {
-  const { data, error } = await supabase.from("lorem-forum").select(`*`).order("name")
-  if (error) {
-    console.error(error)
-  } else {
-    supabaseData.value = data
-  }
-  loading.value = false
-}
-
-onMounted(async () => {
-  getData()
-})
-</script>
-
 <template>
   <div>
-    <section class="hero flex flex-col items-center justify-center mb-12">
-      <div class="container p-4">
-        <h1 class="mb-6">Welcome to the homepage</h1>
-        <p class="mb-8 text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua.
-        </p>
-        <NuxtLink to="/" class="mr-3">
-          <Button label="Call To Action" />
-        </NuxtLink>
-      </div>
+    <section class="bg-black flex justify-center py-8">
+      <img src="/images/hero.jpg" alt="No Joe Hathaway" class="hero" />
     </section>
 
-    <section class="container p-4">
-      <ProgressSpinner v-if="loading" />
-      <p v-else>
-        {{ supabaseData }}
-      </p>
+    <section class="bg-white pt-8 pb-5">
+      <svg
+        viewBox="0 0 1000 120"
+        width="100%"
+        height="auto"
+        style="display: block; margin: 0 auto"
+        preserveAspectRatio="xMidYMid meet"
+        aria-label="NO JOE HATHAWAY"
+      >
+        <text
+          x="50%"
+          y="50%"
+          text-anchor="middle"
+          dominant-baseline="middle"
+          font-family="var(--font-family-header, 'Oswald', Arial, sans-serif)"
+          font-size="100"
+          font-weight="600"
+          style="text-transform: uppercase; letter-spacing: 0.02em"
+        >
+          <tspan fill="currentColor">NO</tspan>
+          <tspan fill="#e51929">JOE</tspan>
+          <tspan fill="currentColor">HATHAWAY!</tspan>
+        </text>
+      </svg>
     </section>
   </div>
 </template>
 
-<style lang="scss" scoped>
-.hero {
-  background: url("/images/hero.jpg") no-repeat center center;
-  background-size: cover;
-  min-height: 500px;
-}
-</style>
+<style lang="scss" scoped></style>
