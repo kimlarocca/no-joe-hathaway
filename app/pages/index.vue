@@ -25,7 +25,8 @@
         >
           <tspan fill="currentColor">NO</tspan>
           <tspan fill="#e51929">JOE</tspan>
-          <tspan fill="currentColor">HATHAWAY!</tspan>
+          <tspan fill="currentColor">HATH</tspan>
+          <tspan fill="#e51929">AWAY</tspan>
         </text>
       </svg>
     </section>
