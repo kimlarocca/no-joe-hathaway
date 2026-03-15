@@ -21,6 +21,7 @@
   p {
     font-size: 16px;
     line-height: 20px;
+    font-weight: 400;
     @screen md {
       font-size: 18px;
       line-height: 24px;
@@ -44,23 +45,25 @@
   .like-h2 {
     font-family: var(--font-family-header);
     font-size: 30px;
-    line-height: 30px;
+    line-height: 40px;
     font-weight: 600;
     text-transform: uppercase;
     @screen md {
-      font-size: 40px;
-      line-height: 40px;
+      font-size: 60px;
+      line-height: 70px;
     }
   }
 
   h3,
   .like-h3 {
     font-family: var(--font-family-header);
-    font-size: 30px;
+    font-size: 20px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--red);
     @screen md {
-      font-size: 40px;
+      font-size: 30px;
       line-height: 40px;
     }
   }

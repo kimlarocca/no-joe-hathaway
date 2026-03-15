@@ -135,13 +135,14 @@ export default defineNuxtConfig({
       mode: "out-in",
     },
     head: {
-      title: 'No Joe Hathaway!', // default fallback title
+      title: 'No Joe Hathaway | The Radical Machine Candidate', // default fallback title
       htmlAttrs: {
         lang: 'en',
       },
       meta: [
         { name: 'msapplication-TileColor', content: '#0a84ff' },
-        { name: 'theme-color', content: '#0a84ff' }
+        { name: 'theme-color', content: '#0a84ff' },
+        { name: 'description', content: 'Radical Joe Hathaway yells socialist at neighbors who want healthcare while enabling fascism and corporate greed. See the records, corporate sponsors, and silence that defines his failed leadership.' },
       ],
       link: [
         {
