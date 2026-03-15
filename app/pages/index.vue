@@ -765,6 +765,31 @@
       id="playbook"
       class="bg-gradient-to-br from-gray-100 to-gray-300 py-12 md:py-16 lg:py-24 relative overflow-hidden"
     >
+      <!-- Diagonal racing stripes -->
+      <div class="absolute inset-0 opacity-20">
+        <div
+          class="absolute top-0 left-0 w-64 h-full bg-[#e51929] transform -skew-x-12"
+        ></div>
+        <div
+          class="absolute top-0 left-32 w-32 h-full bg-yellow-400 transform -skew-x-12"
+        ></div>
+        <div
+          class="absolute top-0 right-0 w-64 h-full bg-[#e51929] transform skew-x-12"
+        ></div>
+        <div
+          class="absolute top-0 right-32 w-32 h-full bg-yellow-400 transform skew-x-12"
+        ></div>
+      </div>
+
+      <!-- Top racing stripe bar -->
+      <div
+        class="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-[#e51929] via-yellow-400 to-[#e51929]"
+      ></div>
+      <!-- Bottom racing stripe bar -->
+      <div
+        class="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-r from-[#e51929] via-yellow-400 to-[#e51929]"
+      ></div>
+
       <!-- Paper texture effect -->
       <div class="absolute inset-0 opacity-5">
         <div

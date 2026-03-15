@@ -178,13 +178,19 @@
           class="dpad-btn absolute left-0 top-1/2 -translate-y-1/2"
           @touchstart.prevent="setDirection('left')"
         >
-          <span class="dpad-arrow" style="display:inline-block;transform:rotate(-90deg)">&#9650;</span>
+          <span
+            class="dpad-arrow"
+            style="display: inline-block; transform: rotate(-90deg)"
+            >&#9650;</span
+          >
         </button>
         <button
           class="dpad-btn absolute right-0 top-1/2 -translate-y-1/2"
           @touchstart.prevent="setDirection('right')"
         >
-          <span class=\"dpad-arrow\" style=\"display:inline-block;transform:rotate(90deg)\">&#9650;</span>
+          <span class="dpad-arrow" style="display: inline-block; transform: rotate(90deg)"
+            >&#9650;</span
+          >
         </button>
         <div
           class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-gray-800 border-2 border-gray-600"
