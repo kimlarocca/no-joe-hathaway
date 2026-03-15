@@ -270,6 +270,26 @@ const currentDir = ref(null)
 const nextDir = ref(null)
 const moveSpeed = 0.1
 
+let eatingSound = null
+
+function playEatingSound() {
+  if (!eatingSound) {
+    eatingSound = new Audio("/eating.mp3")
+    eatingSound.loop = true
+    eatingSound.volume = 0.5
+  }
+  if (eatingSound.paused) {
+    eatingSound.play().catch(() => {})
+  }
+}
+
+function stopEatingSound() {
+  if (eatingSound && !eatingSound.paused) {
+    eatingSound.pause()
+    eatingSound.currentTime = 0
+  }
+}
+
 const gameStarted = ref(false)
 const score = ref(0)
 const highScore = ref(0)
@@ -468,14 +488,18 @@ function resetGame() {
 
 function gameLoop() {
   if (gameOver.value) {
+    stopEatingSound()
     animId = requestAnimationFrame(gameLoop)
     return
   }
 
   if (!gameStarted.value || !currentDir.value) {
+    stopEatingSound()
     animId = requestAnimationFrame(gameLoop)
     return
   }
+
+  playEatingSound()
 
   // Current snapped position before moving
   const prevCol = Math.round(joeCol.value)
@@ -606,6 +630,7 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener("resize", resizeHandler)
   if (animId) cancelAnimationFrame(animId)
+  stopEatingSound()
 })
 </script>
 
