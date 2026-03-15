@@ -6,7 +6,7 @@
 
     <section class="bg-white pt-8 pb-5">
       <svg
-        viewBox="0 0 1000 120"
+        viewBox="0 0 1000 140"
         width="100%"
         height="auto"
         style="display: block; margin: 0 auto"
@@ -15,7 +15,7 @@
       >
         <text
           x="50%"
-          y="50%"
+          y="70"
           text-anchor="middle"
           dominant-baseline="middle"
           font-family="var(--font-family-header, 'Oswald', Arial, sans-serif)"
