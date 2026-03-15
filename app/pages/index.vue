@@ -2,7 +2,7 @@
   <div>
     <!-- title with racing elements -->
     <section
-      class="bg-gradient-to-br from-white via-yellow-50 to-white pt-8 pb-4 xl:pb-0 relative overflow-hidden border-b-8 border-black"
+      class="bg-gradient-to-br from-white via-yellow-50 to-white pt-6 pb-4 xl:pb-0 relative border-b-8 border-black"
     >
       <!-- Racing stripes background -->
       <div
@@ -23,7 +23,7 @@
       </div>
 
       <svg
-        viewBox="0 0 1000 140"
+        viewBox="0 0 1000 160"
         width="100%"
         height="auto"
         style="
@@ -37,7 +37,7 @@
       >
         <text
           x="50%"
-          y="70"
+          y="85"
           text-anchor="middle"
           dominant-baseline="middle"
           font-family="var(--font-family-header, 'Oswald', Arial, sans-serif)"
@@ -59,7 +59,7 @@
         <p
           class="flex justify-center items-center gap-4 flex-col lg:flex-row flex-wrap font-black uppercase tracking-wider"
         >
-          <span class="lg:hidden text-[#e51929]">»</span>
+          <span class="lg:hidden text-[#e51929]">⌄</span>
           <a
             href="#radical-hero"
             class="text-white hover:text-yellow-400 transition-colors transform hover:scale-110 cursor-pointer"
@@ -89,7 +89,7 @@
             class="text-white hover:text-yellow-400 transition-colors transform hover:scale-110 cursor-pointer"
             >Stay Informed</a
           > -->
-          <span class="lg:hidden text-[#e51929]">»</span>
+          <span class="lg:hidden text-[#e51929]">⌄</span>
         </p>
       </div>
     </nav>
