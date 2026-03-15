@@ -178,13 +178,13 @@
           class="dpad-btn absolute left-0 top-1/2 -translate-y-1/2"
           @touchstart.prevent="setDirection('left')"
         >
-          <span class="dpad-arrow">&#9664;</span>
+          <span class="dpad-arrow" style="display:inline-block;transform:rotate(-90deg)">&#9650;</span>
         </button>
         <button
           class="dpad-btn absolute right-0 top-1/2 -translate-y-1/2"
           @touchstart.prevent="setDirection('right')"
         >
-          <span class="dpad-arrow">&#9654;</span>
+          <span class=\"dpad-arrow\" style=\"display:inline-block;transform:rotate(90deg)\">&#9650;</span>
         </button>
         <div
           class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-gray-800 border-2 border-gray-600"
@@ -268,7 +268,9 @@ const joeCol = ref(START_COL)
 const joeRow = ref(START_ROW)
 const currentDir = ref(null)
 const nextDir = ref(null)
-const moveSpeed = 0.1
+const DESKTOP_SPEED = 0.1
+const MOBILE_SPEED = 0.06
+const moveSpeed = computed(() => (isMobile.value ? MOBILE_SPEED : DESKTOP_SPEED))
 
 let eatingSound = null
 
@@ -508,10 +510,10 @@ function gameLoop() {
   // Move
   let nc = joeCol.value
   let nr = joeRow.value
-  if (currentDir.value === "left") nc -= moveSpeed
-  if (currentDir.value === "right") nc += moveSpeed
-  if (currentDir.value === "up") nr -= moveSpeed
-  if (currentDir.value === "down") nr += moveSpeed
+  if (currentDir.value === "left") nc -= moveSpeed.value
+  if (currentDir.value === "right") nc += moveSpeed.value
+  if (currentDir.value === "up") nr -= moveSpeed.value
+  if (currentDir.value === "down") nr += moveSpeed.value
 
   // The target grid cell we're moving toward
   const targetCol = Math.round(nc)
