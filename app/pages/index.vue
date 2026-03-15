@@ -290,29 +290,10 @@
           ></div>
         </div>
 
-        <!-- PACman Joe Graphic with racing frame -->
+        <!-- PACman Joe Game -->
         <div class="flex justify-center mb-12">
-          <div class="relative w-full max-w-2xl">
-            <!-- Racing number badge -->
-            <div
-              class="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-[#e51929] to-yellow-400 border-4 border-black rounded-full flex items-center justify-center font-black text-4xl text-white z-10 shadow-2xl transform rotate-12"
-            >
-              $$
-            </div>
-            <div
-              class="relative aspect-video bg-gradient-to-br from-yellow-400/30 to-[#e51929]/30 border-8 border-double border-yellow-400 flex items-center justify-center transform hover:scale-105 transition-transform"
-            >
-              <p class="text-yellow-400 text-3xl font-black uppercase tracking-widest">
-                PACman Joe
-              </p>
-              <!-- Corner accents -->
-              <div
-                class="absolute top-2 left-2 w-8 h-8 border-t-4 border-l-4 border-[#e51929]"
-              ></div>
-              <div
-                class="absolute bottom-2 right-2 w-8 h-8 border-b-4 border-r-4 border-[#e51929]"
-              ></div>
-            </div>
+          <div class="relative w-full">
+            <PacmanJoe />
           </div>
         </div>
 
