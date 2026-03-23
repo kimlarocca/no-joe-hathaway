@@ -274,8 +274,8 @@ const joeCol = ref(START_COL)
 const joeRow = ref(START_ROW)
 const currentDir = ref(null)
 const nextDir = ref(null)
-const DESKTOP_SPEED = 0.1
-const MOBILE_SPEED = 0.06
+const DESKTOP_SPEED = 0.08
+const MOBILE_SPEED = 0.08
 const moveSpeed = computed(() => (isMobile.value ? MOBILE_SPEED : DESKTOP_SPEED))
 
 let eatingSound = null

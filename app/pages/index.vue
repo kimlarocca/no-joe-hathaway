@@ -67,9 +67,9 @@
           >
           <span class="hidden lg:inline text-[#e51929]">»</span>
           <a
-            href="#sponsors"
+            href="#donors"
             class="text-white hover:text-yellow-400 transition-colors transform hover:scale-110 cursor-pointer"
-            >The Sponsors</a
+            >The Donors</a
           >
           <span class="hidden lg:inline text-[#e51929]">»</span>
           <a
@@ -264,7 +264,7 @@
 
     <!-- section 4: Joe for Donors, Not Neighbors -->
     <section
-      id="sponsors"
+      id="donors"
       class="bg-black text-white py-12 md:py-16 lg:py-24 relative overflow-hidden"
     >
       <!-- Diagonal racing background -->
