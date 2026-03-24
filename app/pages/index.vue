@@ -401,7 +401,7 @@
                 !
               </div>
               <h3 class="text-yellow-400 mb-4 uppercase tracking-wider font-black">
-                AIPAC JOE
+                AIPAC JOE?
               </h3>
               <div class="space-y-3">
                 <p class="font-bold text-white">
