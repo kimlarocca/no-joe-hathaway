@@ -61,9 +61,9 @@
         >
           <span class="lg:hidden text-[#e51929]">⌄</span>
           <a
-            href="#radical-hero"
+            href="#radical-joe"
             class="text-white hover:text-yellow-400 transition-colors transform hover:scale-110 cursor-pointer"
-            >The "Radical" Hero</a
+            >Joe The "Radical"</a
           >
           <span class="hidden lg:inline text-[#e51929]">»</span>
           <a
@@ -94,9 +94,9 @@
       </div>
     </nav>
 
-    <!-- section 3: The "Radical" Hero -->
+    <!-- section 3: Joe The "Radical" -->
     <section
-      id="radical-hero"
+      id="radical-joe"
       class="bg-[#2d2d2d] text-white py-12 md:py-16 lg:py-24 relative overflow-hidden"
     >
       <!-- Diagonal racing stripes background -->
@@ -214,7 +214,11 @@
               <ol class="space-y-3 text-sm md:text-base">
                 <li class="flex">
                   <span class="font-bold text-[#e51929] mr-3 flex-shrink-0">1.</span>
-                  <span>Do you support the $1B/day war in Iran?</span>
+                  <span
+                    >Do you support the $1B/day war in Iran?
+                    <strong>Update: He does!</strong> So much for being a Fiscal
+                    Conservative. He must love high gas prices!</span
+                  >
                 </li>
                 <li class="flex">
                   <span class="font-bold text-[#e51929] mr-3 flex-shrink-0">2.</span>
@@ -245,14 +249,37 @@
                   <span
                     >Do you accept the
                     <strong>2020 Presidential election results</strong> and the
-                    <strong>2024 NJ Governor election results</strong> as valid?</span
-                  >
+                    <strong>2024 NJ Governor election results</strong> as valid? Update:
+                    he finally admitted he does, 6 years later in 2026, then wished we
+                    would stop talking about it.
+                  </span>
                 </li>
                 <li class="flex">
                   <span class="font-bold text-[#e51929] mr-3 flex-shrink-0">6.</span>
                   <span
                     >Why haven't you spoken for the victims of the Cranford Teen
                     Murders?</span
+                  >
+                </li>
+                <li class="flex">
+                  <span class="font-bold text-[#e51929] mr-3 flex-shrink-0">7.</span>
+                  <span
+                    >Do you support birthright citizenship or Trump's attempt to redefine
+                    it?</span
+                  >
+                </li>
+                <li class="flex">
+                  <span class="font-bold text-[#e51929] mr-3 flex-shrink-0">8.</span>
+                  <span
+                    >Why do you support the
+                    <a
+                      href="https://capitalbnews.org/save-act-voting-requirements-explained/"
+                      target="_blank"
+                      class="text-white underline"
+                      >SAVE Act</a
+                    >
+                    when every bipartisan analysis shows it will result in more eligible
+                    voters being unable to vote?</span
                   >
                 </li>
               </ol>
